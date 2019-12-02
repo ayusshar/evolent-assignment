@@ -1,0 +1,23 @@
+.toaster {
+    width: 300px;
+    position: fixed;
+    top: 10px;
+    right: -300px;
+    background: #a3e0a3;
+    font-size: 14px;
+    padding: 20px;
+    border-radius: 10px;
+    visibility: visible;
+    opacity: 1
+}
+
+.toaster.show {
+    transition: opacity 1s ease-out 1.5s, right  1s, visibility 0s 2.5s;
+    right: 15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.toaster.error {
+    background: #e78989;
+}
